@@ -1,7 +1,7 @@
 import React from "react";
 import { NativeBaseProvider, Box, StatusBar } from "native-base";
 import { THEME } from "./src/styles/theme";
-import { SignIn } from "./src/screens/SignIn";
+import { Routes } from "./src/routes";
 
 import { Loading } from "./src/components/Loading";
 
@@ -23,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
